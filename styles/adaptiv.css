@@ -1,0 +1,29 @@
+@media (max-width: 650px) {
+    .section__image {
+      display: none;
+    }
+    .section__title {
+      text-align: center;
+    }
+    .section__text {
+      margin: 0 auto;
+      padding: 0;
+      min-width: 95vw;
+      /* flex-basis: 99%; */
+    }
+  }
+
+@media (max-width: 350px) {
+    .main {
+  /* display: inline; */
+
+    }
+    .conteiner {
+        padding: 0 5px;
+      }
+  }
+/* @media (max-width: 400px) {
+    .header__list:nth-last-child(1) {
+        display: none;
+      }
+  } */
