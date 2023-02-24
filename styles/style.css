@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;1000&display=swap");
 
 :root {
+  --title-font: calc(20px + 30 * ((100vw - 375px) / (1200 - 375)));
   --logo-size: calc(35px + 38 * ((100vw - 400px) / (1200 - 400)));
   --margin-bottom: calc(35px + 115 * ((100vw - 250px) / (1200 - 250)));
 }
@@ -150,8 +151,7 @@ section {
 }
 
 .main__title {
-  /* font-size: 50px; */
-  font-size: calc(20px + 30 * ((100vw - 375px) / (1200 - 375)));
+  font-size: var(--title-font);
   font-weight: 1000;
   line-height: 1.2;
 }
@@ -186,6 +186,7 @@ section {
 .main__image {
   flex-basis: 40%;
   margin: auto 0;
+  width: 100%;
 }
 
 .main__video {
@@ -204,7 +205,7 @@ video {
 /* section */
 
 .section__title_middle {
-  font-size: calc(24px + 16 * ((100vw - 375px) / (1200 - 375)));
+  font-size: var(--title-font);
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
@@ -242,14 +243,9 @@ video {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--margin-bottom);
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
-/* .section__desc_middle {
-  font-size: 20px;
-  line-height: 1.8;
-  text-align: center;
-} */
 .section__text {
   flex-basis: 60%;
   padding: 0 10px;
@@ -269,7 +265,7 @@ video {
 }
 
 .section__title {
-  font-size: calc(24px + 16 * ((100vw - 375px) / (1200 - 375)));
+  font-size: var(--title-font);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -339,7 +335,7 @@ video {
   align-items: center;
   margin: auto 0;
   padding: 0 15px;
-  font-size: calc(16px + 4 * ((100vw - 375px) / (1200 - 375)));
+  font-size: calc(12px + 10 * ((100vw - 250px) / (1200 - 250)));
   width: 200px;
 }
 
