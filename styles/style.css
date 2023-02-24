@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;1000&display=swap");
 
 :root {
-  --title-font: calc(20px + 30 * ((100vw - 375px) / (1200 - 375)));
+  --title-font: calc(20px + 13 * ((100vw - 375px) / (1200 - 375)));
   --logo-size: calc(35px + 38 * ((100vw - 400px) / (1200 - 400)));
   --margin-bottom: calc(35px + 115 * ((100vw - 250px) / (1200 - 250)));
 }
@@ -35,13 +35,14 @@ body {
   /* background-size: 250px; */
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch; /* Для Safari и Chrome на iOS */
+
   
 }
 
-section {
+/* section {
   overflow-x: hidden;
 
-}
+} */
 
 /*  */
 
@@ -72,7 +73,7 @@ section {
 .header__list {
   display: flex;
   list-style-type: none;
-  gap: calc(5px + 55 * ((100vw - 375px) / (1200 - 375)));
+  gap: calc(5px + 20 * ((100vw - 375px) / (1200 - 375)));
   align-items: center;
 }
 
@@ -159,7 +160,7 @@ section {
 .main__desk {
   padding-right: 10px;
   /* font-size: 20px; */
-  font-size: calc(12px + 11 * ((100vw - 375px) / (1200 - 375)));
+  font-size: calc(12px + 4 * ((100vw - 375px) / (1200 - 375)));
   line-height: 1.5;
   /* box-shadow: 2px 2px 20px #3afffd; */
   border-radius: 10px;
@@ -167,7 +168,7 @@ section {
 }
 
 .main__btn {
-  font-size: calc(12px + 8 * ((100vw - 375px) / (1200 - 375)));
+  font-size: calc(10px + 5 * ((100vw - 375px) / (1200 - 375)));
   color: #fff;
   text-decoration: none;
   border-radius: 10px;
@@ -190,6 +191,8 @@ section {
 }
 
 .main__video {
+  position: relative;
+  right: -15px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px 20px #b75cff;
@@ -248,7 +251,7 @@ video {
 
 .section__text {
   flex-basis: 60%;
-  padding: 0 10px;
+  padding: 0 40px;
 
   opacity: 0;
   transform: translateX(800px);
@@ -291,6 +294,8 @@ video {
 }
 
 .section__img {
+  position: relative;
+  left: -20px;
   width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px 20px #b75cff;
@@ -327,16 +332,16 @@ video {
 }
 
 .profit__inner_img {
-  width: calc(38px + 49 * ((100vw - 375px) / (1200 - 375)));
-  height: calc(38px + 49 * ((100vw - 375px) / (1200 - 375)));
+  width: calc(38px + 20 * ((100vw - 375px) / (1200 - 375)));
+  height: calc(38px + 20 * ((100vw - 375px) / (1200 - 375)));
 }
 
 .profit__inner p {
   align-items: center;
   margin: auto 0;
   padding: 0 15px;
-  font-size: calc(12px + 10 * ((100vw - 250px) / (1200 - 250)));
-  width: 200px;
+  font-size: calc(12px + 5 * ((100vw - 250px) / (1200 - 250)));
+  width: 250px;
 }
 
 /*  */
@@ -400,4 +405,14 @@ video {
   .btn-up:hover {
     background-color: #7e61a5;
   }
+}
+
+
+
+
+.iframe-review {
+  width: auto;
+  height: 600px;
+  border-radius: 20px;
+  margin: 0 auto;
 }
