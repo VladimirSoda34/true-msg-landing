@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="./styles/normalize.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/adaptiv.css" />
-    <script src="./js/scripts.js" defer></script>
+    <link rel="stylesheet" href="./styles/simple-adaptive-slider.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    
+    <script src="./js/scroll.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/simple-adaptive-slider.js" defer></script>
     <script src="./js/btnUp.js" defer></script>
+    <script src="./js/modal.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -20,8 +26,8 @@
         <ul class="header__list">
           <li class="header__item">
             <a href="#where" class="header__link"
-              >Где <span>применимо</span>
-            </a>
+              >Где <span><span>применимо</span>
+            </span> </a>
           </li>
           <li class="header__item">
             <a href="#how" class="header__link">Как <span>работает</span> </a>
@@ -42,21 +48,16 @@
       <section class="section__main">
         <div class="main hosting">
           <div class="main__text">
-            <h1 class="main__title">
-              Увликательный офлайн чат на ваше мероприятие
-              <!-- <br class="title__br" /> -->
-            </h1>
+            <h1 class="main__title">Увлекательный чат <br class="title__br"> для  ваших гостей</h1>
             <p class="main__desk">
-              Правда чат это интерактив для гостей который развлечёт и подружит их друг с другом.  А так же это помощник ведущему в понимании мыслей и желаний гостей.  Настройте свой праздничный вечер на позитивный вайб с помощью ПравдаЧата.
+              С помощью чата можно уловить царящую на мероприятие атмосферу, получить обратную связь от аудитории и раскрепостить гостей!
             </p>
             <a class="main__btn" href="#">Заказать Чат</a>
           </div>
           <div class="main__image">
-            <img
-              style="width: 100%"
-              src="images/main-screen.png"
-              alt="Gallery"
-            />
+            <img style="width: 100%;" src="images/main-screen.png" alt="Gallery" />
+
+            
           </div>
         </div>
       </section>
@@ -181,6 +182,143 @@
         </div>
       </section>
 
+      <!-- Разметка слайдера -->
+      <h2 class="section__title_middle _active">Правда Отзывы</h2>
+      <div class="itcss">
+        <div class="itcss__wrapper">
+          <div class="itcss__items">
+            <div class="itcss__item">
+              <div id="how" class="section">
+                <div class="section__image _active">
+                  <div class="iframe-review">
+                    <iframe
+                      src="https://player.vimeo.com/video/801858234?h=990693298d"
+                      width="640"
+                      height="1138"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+                <div class="section__text _active">
+                  <h3 class="section__title">Как это работает</h3>
+                  <div class="section__text_inn">
+                    <p class="main__desk">
+                      <img
+                        class="point"
+                        src="./images/icons/focus.png"
+                        alt=""
+                      />
+                      Устанавливаете проектор или любой другой экран в зале где
+                      будет проходить мероприятие. Выберете место где он будет
+                      работать. Мы рекомендуем либо в центре внимания, например
+                      сцена, или chill зона, место где люди будут отдыхать
+                      проводить время тет-а-тет например бар
+                    </p>
+                  </div>
+                  <div class="section__text_inn">
+                    <p class="main__desk">
+                      <img
+                        class="point"
+                        src="./images/icons/focus.png"
+                        alt=""
+                      />
+                      Запускаете на подключённом компьютере к экрану браузер и
+                      проходите по ссылке, которую вам пришлёт наш специалист
+                    </p>
+                  </div>
+                  <div class="section__text_inn">
+                    <p class="main__desk">
+                      <img
+                        class="point"
+                        src="./images/icons/focus.png"
+                        alt=""
+                      />
+                      Отправляете своё собственное первое сообщение. Люди
+                      заметив экран, сами вовлекутся и начнут отправлять друг
+                      другу послания. Для нагнетания ажиотажа, сообщите в
+                      микрофон о ПравдаЧате и первое время сами активно
+                      посылайте новые сообщения.
+                    </p>
+                  </div>
+                  <a class="main__btn" href="#">Заказать Чат</a>
+                </div>
+              </div>
+            </div>
+            <div class="itcss__item">
+              <div id="how" class="section">
+                <div class="section__image _active">
+                  <video controls class="main__video" autoplay loop>
+                    <iframe
+                      src="https://player.vimeo.com/video/801858234?h=990693298d"
+                      width="640"
+                      height="1138"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </video>
+                </div>
+                <div class="section__text _active">
+                  <h3 class="section__title">Как это работает</h3>
+                  <div class="section__text_inn">
+                    <p class="main__desk">
+                      <img
+                        class="point"
+                        src="./images/icons/focus.png"
+                        alt=""
+                      />
+                      Устанавливаете проектор или любой другой экран в зале где
+                      будет проходить мероприятие. Выберете место где он будет
+                      работать. Мы рекомендуем либо в центре внимания, например
+                      сцена, или chill зона, место где люди будут отдыхать
+                      проводить время тет-а-тет например бар
+                    </p>
+                  </div>
+                  <div class="section__text_inn">
+                    <p class="main__desk">
+                      <img
+                        class="point"
+                        src="./images/icons/focus.png"
+                        alt=""
+                      />
+                      Запускаете на подключённом компьютере к экрану браузер и
+                      проходите по ссылке, которую вам пришлёт наш специалист
+                    </p>
+                  </div>
+                  <div class="section__text_inn">
+                    <p class="main__desk">
+                      <img
+                        class="point"
+                        src="./images/icons/focus.png"
+                        alt=""
+                      />
+                      Отправляете своё собственное первое сообщение. Люди
+                      заметив экран, сами вовлекутся и начнут отправлять друг
+                      другу послания. Для нагнетания ажиотажа, сообщите в
+                      микрофон о ПравдаЧате и первое время сами активно
+                      посылайте новые сообщения.
+                    </p>
+                  </div>
+                  <a class="main__btn" href="#">Заказать Чат</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="itcss__btn itcss__btn_prev"
+          role="button"
+          data-slide="prev"
+        ></button>
+        <button
+          class="itcss__btn itcss__btn_next"
+          role="button"
+          data-slide="next"
+        ></button>
+      </div>
+
       <section id="presentation">
         <h3 class="section__title">Правда Чат</h3>
         <iframe
@@ -196,7 +334,7 @@
           >Congratulation icons created by Ayub Irawan - Flaticon</a
         >
       </div>
-
+      
       <div class="btn-up__wrapper"><div class="btn-up btn-up_hide"></div></div>
     </div>
   </body>
