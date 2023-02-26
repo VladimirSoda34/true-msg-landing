@@ -1,0 +1,128 @@
+input {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+/* фон нашего модального окна */
+.modalBackground {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  /* указываем z-индекс для корректного наслаивания */
+  z-index: 1;
+}
+
+/* позиционирование самого модального окна */
+.modalActive {
+  position: absolute;
+  width: calc(290px + 60 * ((100vw - 265px) / (1200 - 265)));
+  height: calc(450px + 135 * ((100vw - 265px) / (1200 - 265)));
+  top: calc(50% - 250px);
+  left: calc(50% - 175px);
+  border-radius: 10px;
+  background: linear-gradient(103deg, #c980ff -30.3%, #5f3884 58.12%) no-repeat;
+  cursor: default;
+  padding: 25px 50px;
+}
+
+/* кнопочка закрытия модального окна */
+.modalClose {
+  background: #ff0000;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  color: black;
+}
+
+.modalClose:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* сама картинка кнопочки закрытия */
+.modalClose img {
+  margin: 3px;
+  width: 16px;
+  height: 16px;
+}
+
+/* делаем позиционирование внутренних элементов относительно модального окна */
+.modalWindow {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal__logo {
+  position: relative;
+  width: calc(25px + 70 * ((100vw - 240px) / (1200 - 240)));
+  height: calc(25px + 70 * ((100vw - 240px) / (1200 - 240)));
+  margin: auto 0;
+  top: 7.5px;
+  margin: 0 auto 30px;
+}
+
+.modal__title {
+  font-size: var(--title-font);
+  font-weight: 1000;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.modal__desk {
+  padding-right: 10px;
+  font-size: calc(12px + 6 * ((100vw - 375px) / (1200 - 375)));
+  line-height: 1.5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.modal__btn {
+  font-size: calc(10px + 5 * ((100vw - 375px) / (1200 - 375)));
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  background: rgb(234 222 255);
+  padding: 10px 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.modal__btn:hover {
+  background: rgb(117, 83, 175);
+  transition: background-color 0.3s ease;
+}
+
+.logo__telegram {
+  display: flex;
+}
+
+.logo__telegram img {
+  margin: 0 auto;
+  height: 50px;
+}

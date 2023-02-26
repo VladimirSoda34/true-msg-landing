@@ -22,6 +22,12 @@ h3 {
   color: azure;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%)
@@ -35,8 +41,6 @@ body {
   /* background-size: 250px; */
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch; /* Для Safari и Chrome на iOS */
-
-  
 }
 
 /* section {
@@ -57,7 +61,6 @@ body {
   padding: 15px 15px;
   font-size: calc(10px + 6 * ((100vw - 375px) / (1200 - 375)));
   overflow-x: hidden;
-
 }
 
 .header__logo {
@@ -82,6 +85,11 @@ body {
   text-decoration: none;
 }
 
+.header__link:hover {
+  color: #876b9f;
+  transition: color 0.3s ease;
+}
+
 .header__item_gradient {
   background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   border-radius: 10px;
@@ -91,6 +99,7 @@ body {
 
 .header__item_gradient:hover {
   background: #d9aaff;
+  /* transition: background 0.3s ease; */
 }
 
 .conteiner {
@@ -98,10 +107,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   /* overflow-x: hidden; */
-
 }
-
-
 
 /*  */
 
@@ -137,14 +143,12 @@ body {
 }
 .section__main {
   margin-bottom: var(--margin-bottom);
-
 }
 
 .main {
   display: flex;
   justify-content: space-between;
 }
-
 
 .main__text {
   flex-basis: 60%;
@@ -241,7 +245,6 @@ video {
   opacity: 1;
 }
 
-
 .section {
   display: flex;
   justify-content: space-between;
@@ -301,8 +304,6 @@ video {
   box-shadow: 2px 2px 20px #b75cff;
 }
 
-
-
 /*  */
 .profit {
   display: flex;
@@ -344,10 +345,17 @@ video {
   width: 250px;
 }
 
+.section__title_icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
 /*  */
 
-.section__text_inn {
-  display: flex;
+.section__text_slider {
+  margin: auto 50px;
+  display: block;
 }
 
 .point {
@@ -356,6 +364,14 @@ video {
   height: calc(15px + 20 * ((100vw - 240px) / (1200 - 240)));
   margin: auto 0;
   top: 7.5px;
+}
+.point_rev {
+  position: relative;
+  width: calc(25px + 70 * ((100vw - 240px) / (1200 - 240)));
+  height: calc(25px + 70 * ((100vw - 240px) / (1200 - 240)));
+  margin: auto 0;
+  top: 7.5px;
+  margin: 15px auto;
 }
 
 .iframe {
@@ -406,13 +422,13 @@ video {
     background-color: #7e61a5;
   }
 }
-
-
-
-
 .iframe-review {
-  width: auto;
-  height: 600px;
+  margin: auto;
+}
+.iframe-review iframe {
+  width: calc(113px + 187 * ((100vw - 405px) / (1200 - 405)));
+  height: calc(195px + 345 * ((100vw - 405px) / (1200 - 405)));
+
   border-radius: 20px;
-  margin: 0 auto;
+  margin-left: 45px;
 }

@@ -12,22 +12,71 @@
     <link rel="stylesheet" href="./styles/adaptiv.css" />
     <link rel="stylesheet" href="./styles/simple-adaptive-slider.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
-    
+
     <script src="./js/scroll.js" defer></script>
     <script src="./js/slider.js" defer></script>
     <script src="./js/simple-adaptive-slider.js" defer></script>
+
     <script src="./js/btnUp.js" defer></script>
     <script src="./js/modal.js" defer></script>
   </head>
   <body>
+    <!-- Modal -->
+    <div class="modalBackground">
+      <div class="modalActive">
+        <div class="modalClose">
+          <img src="/images/close.svg" width="12" alt="" />
+        </div>
+        <div class="modalWindow">
+          <img class="modal__logo" src="./images/logo/logo-white.png" alt="" />
+          <div class="modal__title">Связь с нами</div>
+          <div class="modal__desk">
+            Оставьте контакты,<br />
+            мы позвоним
+          </div>
+          <div class="form">
+            <form action="#" method="post">
+              <label for="name"><div class="modal__desk">Имя:</div></label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="2"
+                maxlength="12"
+                size="10"
+              />
+              <br><br>
+              <label for="phone"><div class="modal__desk">Телефон:</div></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+              <input id="submit" class="modal__btn" type="submit" />
+            </form>
+          </div>
+          <div class="modal__desk">
+            или напишите нам в <a href="https://t.me/seepeople">Telegram</a>
+          </div>
+          <a class="logo__telegram" href="https://t.me/seepeople"
+            ><img src="./images/telegram-logo.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <header class="header">
       <a href="#" class="header__logo"></a>
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
             <a href="#where" class="header__link"
-              >Где <span><span>применимо</span>
-            </span> </a>
+              >Где <span><span>применимо</span> </span>
+            </a>
           </li>
           <li class="header__item">
             <a href="#how" class="header__link">Как <span>работает</span> </a>
@@ -38,7 +87,10 @@
           <li class="header__item">
             <a href="#presentation" class="header__link">Демонстрация</a>
           </li>
-          <li class="header__item header__item_gradient">
+          <li class="header__item">
+            <a href="#rev" class="header__link">Отзывы</a>
+          </li>
+          <li class="trigger header__item header__item_gradient">
             <a href="#" class="header__link">Заказать Чат</a>
           </li>
         </ul>
@@ -48,16 +100,23 @@
       <section class="section__main">
         <div class="main hosting">
           <div class="main__text">
-            <h1 class="main__title">Увлекательный чат <br class="title__br"> для  ваших гостей</h1>
+            <h1 class="main__title">
+              Увликательный офлайн чат на ваше мероприятие
+            </h1>
             <p class="main__desk">
-              С помощью чата можно уловить царящую на мероприятие атмосферу, получить обратную связь от аудитории и раскрепостить гостей!
+              Анонимными сообщениями, люди дадут вам понять своё настроение, и
+              дадут оценку происходящему. Вы как организатор с помощью чата
+              сможете улавливать настроение толпы и корректировать ход
+              мероприятия
             </p>
-            <a class="main__btn" href="#">Заказать Чат</a>
+            <a class="main__btn trigger" href="#">Заказать Чат</a>
           </div>
           <div class="main__image">
-            <img style="width: 100%;" src="images/main-screen.png" alt="Gallery" />
-
-            
+            <img
+              style="width: 100%"
+              src="images/main-screen.png"
+              alt="Gallery"
+            />
           </div>
         </div>
       </section>
@@ -119,7 +178,6 @@
 
         <div id="how" class="section">
           <div class="section__image _anim-items">
-            <!-- <img class="section__img" src="images/h-pic-1.jpg" alt="Gallery" /> -->
             <video controls class="main__video" autoplay loop>
               <source src="./video/description.mp4" type="video/mp4" />
               <source src="./video/description.webm" type="video/webm" />
@@ -153,7 +211,7 @@
                 первое время сами активно посылайте новые сообщения.
               </p>
             </div>
-            <a class="main__btn" href="#">Заказать Чат</a>
+            <a class="main__btn trigger" href="#">Заказать Чат</a>
           </div>
         </div>
 
@@ -174,7 +232,7 @@
               мероприятии или высказать свое мнение по определенным темам, если
               они чувствуют, что их личность защищена
             </p>
-            <a class="main__btn" href="#">Заказать Чат</a>
+            <a class="main__btn trigger" href="#">Заказать Чат</a>
           </div>
           <div class="section__image _anim-items">
             <img class="section__img" src="images/h-pic-1.jpg" alt="Gallery" />
@@ -183,125 +241,140 @@
       </section>
 
       <!-- Разметка слайдера -->
-      <h2 class="section__title_middle _active">Правда Отзывы</h2>
+      <h2 id="rev" class="section__title_middle _active">Правда Отзывы</h2>
       <div class="itcss">
         <div class="itcss__wrapper">
           <div class="itcss__items">
             <div class="itcss__item">
-              <div id="how" class="section">
-                <div class="section__image _active">
-                  <div class="iframe-review">
-                    <iframe
-                      src="https://player.vimeo.com/video/801858234?h=990693298d"
-                      width="640"
-                      height="1138"
-                      frameborder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+              <div class="section">
+                <div class="iframe-review">
+                  <iframe
+                    src="//player.vimeo.com/video/801858234?h=990693298d&title=0&byline=0&portrait=0"
+                    width="640"
+                    height="1138"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </div>
-                <div class="section__text _active">
-                  <h3 class="section__title">Как это работает</h3>
-                  <div class="section__text_inn">
-                    <p class="main__desk">
+                <div class="section__text_slider">
+                  <h3 class="section__title">
+                    Алексей Тернов директор по развитию "FlyZone"
+                  </h3>
+                  <div class="section__title_icons">
+                    <div>
                       <img
-                        class="point"
-                        src="./images/icons/focus.png"
+                        class="point_rev"
+                        src="./images/logo/logo-white.png"
                         alt=""
                       />
-                      Устанавливаете проектор или любой другой экран в зале где
-                      будет проходить мероприятие. Выберете место где он будет
-                      работать. Мы рекомендуем либо в центре внимания, например
-                      сцена, или chill зона, место где люди будут отдыхать
-                      проводить время тет-а-тет например бар
-                    </p>
-                  </div>
-                  <div class="section__text_inn">
-                    <p class="main__desk">
                       <img
-                        class="point"
-                        src="./images/icons/focus.png"
+                        class="point_rev"
+                        src="./images/icons/like.png"
                         alt=""
                       />
-                      Запускаете на подключённом компьютере к экрану браузер и
-                      проходите по ссылке, которую вам пришлёт наш специалист
-                    </p>
+                    </div>
                   </div>
-                  <div class="section__text_inn">
-                    <p class="main__desk">
-                      <img
-                        class="point"
-                        src="./images/icons/focus.png"
-                        alt=""
-                      />
-                      Отправляете своё собственное первое сообщение. Люди
-                      заметив экран, сами вовлекутся и начнут отправлять друг
-                      другу послания. Для нагнетания ажиотажа, сообщите в
-                      микрофон о ПравдаЧате и первое время сами активно
-                      посылайте новые сообщения.
-                    </p>
-                  </div>
-                  <a class="main__btn" href="#">Заказать Чат</a>
+
+                  <p class="main__desk">
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
+                    вообще никто не будет этим пользоваться, но как оказалось
+                    очень востребованная штука на мероприятии. Прикольно потом
+                    посмотреть на всю переписку. Рекомендую всем пользоваться
+                    ПрадаЧатом для создания крутой интерактивной зоны на вашем
+                    мероприятии."
+                  </p>
+
+                  <a class="main__btn trigger" href="#">Заказать Чат</a>
                 </div>
               </div>
             </div>
             <div class="itcss__item">
-              <div id="how" class="section">
-                <div class="section__image _active">
-                  <video controls class="main__video" autoplay loop>
-                    <iframe
-                      src="https://player.vimeo.com/video/801858234?h=990693298d"
-                      width="640"
-                      height="1138"
-                      frameborder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </video>
+              <div class="section">
+                <div class="iframe-review">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/8TpWBmc3KZQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </div>
-                <div class="section__text _active">
-                  <h3 class="section__title">Как это работает</h3>
-                  <div class="section__text_inn">
-                    <p class="main__desk">
+                <div class="section__text_slider">
+                  <h3 class="section__title">
+                    Алексей Тернов директор по развитию "FlyZone"
+                  </h3>
+                  <div class="section__title_icons">
+                    <div>
                       <img
-                        class="point"
-                        src="./images/icons/focus.png"
+                        class="point_rev"
+                        src="./images/logo/logo-white.png"
                         alt=""
                       />
-                      Устанавливаете проектор или любой другой экран в зале где
-                      будет проходить мероприятие. Выберете место где он будет
-                      работать. Мы рекомендуем либо в центре внимания, например
-                      сцена, или chill зона, место где люди будут отдыхать
-                      проводить время тет-а-тет например бар
-                    </p>
-                  </div>
-                  <div class="section__text_inn">
-                    <p class="main__desk">
                       <img
-                        class="point"
-                        src="./images/icons/focus.png"
+                        class="point_rev"
+                        src="./images/icons/like.png"
                         alt=""
                       />
-                      Запускаете на подключённом компьютере к экрану браузер и
-                      проходите по ссылке, которую вам пришлёт наш специалист
-                    </p>
+                    </div>
                   </div>
-                  <div class="section__text_inn">
-                    <p class="main__desk">
+
+                  <p class="main__desk">
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
+                    вообще никто не будет этим пользоваться, но как оказалось
+                    очень востребованная штука на мероприятии. Прикольно потом
+                    посмотреть на всю переписку. Рекомендую всем пользоваться
+                    ПрадаЧатом для создания крутой интерактивной зоны на вашем
+                    мероприятии."
+                  </p>
+
+                  <a class="main__btn trigger" href="#">Заказать Чат</a>
+                </div>
+              </div>
+            </div>
+            <div class="itcss__item">
+              <div class="section">
+                <div class="iframe-review">
+                  <iframe
+                    src="//player.vimeo.com/video/801858234?h=990693298d&title=0&byline=0&portrait=0"
+                    width="640"
+                    height="1138"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="section__text_slider">
+                  <h3 class="section__title">
+                    Алексей Тернов директор по развитию "FlyZone"
+                  </h3>
+                  <div class="section__title_icons">
+                    <div>
                       <img
-                        class="point"
-                        src="./images/icons/focus.png"
+                        class="point_rev"
+                        src="./images/logo/logo-white.png"
                         alt=""
                       />
-                      Отправляете своё собственное первое сообщение. Люди
-                      заметив экран, сами вовлекутся и начнут отправлять друг
-                      другу послания. Для нагнетания ажиотажа, сообщите в
-                      микрофон о ПравдаЧате и первое время сами активно
-                      посылайте новые сообщения.
-                    </p>
+                      <img
+                        class="point_rev"
+                        src="./images/icons/like.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                  <a class="main__btn" href="#">Заказать Чат</a>
+
+                  <p class="main__desk">
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
+                    вообще никто не будет этим пользоваться, но как оказалось
+                    очень востребованная штука на мероприятии. Прикольно потом
+                    посмотреть на всю переписку. Рекомендую всем пользоваться
+                    ПрадаЧатом для создания крутой интерактивной зоны на вашем
+                    мероприятии."
+                  </p>
+
+                  <a class="main__btn trigger" href="#">Заказать Чат</a>
                 </div>
               </div>
             </div>
@@ -334,8 +407,9 @@
           >Congratulation icons created by Ayub Irawan - Flaticon</a
         >
       </div>
-      
+      <!-- Button Up low scroling -->
       <div class="btn-up__wrapper"><div class="btn-up btn-up_hide"></div></div>
+      <!--  -->
     </div>
   </body>
 </html>
