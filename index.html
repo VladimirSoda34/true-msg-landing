@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./styles/modal.css" />
 
     <script src="./js/scroll.js" defer></script>
-    <script src="./js/slider.js" defer></script>
     <script src="./js/simple-adaptive-slider.js" defer></script>
 
     <script src="./js/btnUp.js" defer></script>
@@ -25,17 +24,17 @@
     <div class="modalBackground">
       <div class="modalActive">
         <div class="modalClose">
-          <img src="/images/close.svg" width="12" alt="" />
+          <img src="/images/close.svg" width="12" alt="#" />
         </div>
         <div class="modalWindow">
-          <img class="modal__logo" src="./images/logo/logo-white.png" alt="" />
+          <img class="modal__logo" src="./images/logo/logo-white.png" alt="#" />
           <div class="modal__title">Связь с нами</div>
           <div class="modal__desk">
             Оставьте контакты,<br />
             мы позвоним
           </div>
           <div class="form">
-            <form action="#" method="post">
+            <form action="./telegram.php" method="post">
               <label for="name"><div class="modal__desk">Имя:</div></label>
 
               <input
@@ -47,13 +46,13 @@
                 maxlength="12"
                 size="10"
               />
-              <br><br>
+              <br /><br />
               <label for="phone"><div class="modal__desk">Телефон:</div></label>
               <input
                 type="tel"
                 id="phone"
                 name="phone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                
                 required
               />
               <input id="submit" class="modal__btn" type="submit" />
@@ -63,40 +62,41 @@
             или напишите нам в <a href="https://t.me/seepeople">Telegram</a>
           </div>
           <a class="logo__telegram" href="https://t.me/seepeople"
-            ><img src="./images/telegram-logo.png" alt=""
+            ><img src="./images/telegram-logo.png" alt="#"
           /></a>
         </div>
       </div>
     </div>
-    <!--  -->
+
+    <!-- Header -->
+
     <header class="header">
       <a href="#" class="header__logo"></a>
       <nav class="header__nav">
         <ul class="header__list">
+          <li class="header__item">
+            <a href="#how" class="header__link">Как <span>работает</span> </a>
+          </li>
           <li class="header__item">
             <a href="#where" class="header__link"
               >Где <span><span>применимо</span> </span>
             </a>
           </li>
           <li class="header__item">
-            <a href="#how" class="header__link">Как <span>работает</span> </a>
-          </li>
-          <li class="header__item">
-            <a href="#feature" class="header__link">Фича</a>
-          </li>
-          <li class="header__item">
-            <a href="#presentation" class="header__link">Демонстрация</a>
+            <a href="#example" class="header__link">Пример</a>
           </li>
           <li class="header__item">
             <a href="#rev" class="header__link">Отзывы</a>
           </li>
-          <li class="trigger header__item header__item_gradient">
-            <a href="#" class="header__link">Заказать Чат</a>
+          <li class="header__item">
+            <a href="#prise" class="header__link">Цена</a>
           </li>
+          <a href="#" class="main__btn trigger">Заказать Чат</a>
         </ul>
       </nav>
     </header>
     <div class="conteiner">
+      <!-- First screen -->
       <section class="section__main">
         <div class="main hosting">
           <div class="main__text">
@@ -121,62 +121,11 @@
         </div>
       </section>
 
-      <section id="where">
-        <h2 class="section__title_middle _anim-items">
-          Куда отлично впишится ПравдаЧат:
-        </h2>
-        <div class="profit _anim-items">
-          <div class="profit__inner _anim-items">
-            <img
-              class="profit__inner_img"
-              src="./images/icons/mask.png"
-              alt=""
-            />
-            <p>Приватные вечеринки</p>
-          </div>
-          <div class="profit__inner _anim-items">
-            <img
-              class="profit__inner_img"
-              src="./images/icons/team.png"
-              alt=""
-            />
-            <p>Корпоративы</p>
-          </div>
-          <div class="profit__inner _anim-items">
-            <img
-              class="profit__inner_img"
-              src="./images/icons/music.png"
-              alt=""
-            />
-            <p>Музыкальные вечера</p>
-          </div>
-          <div class="profit__inner _anim-items">
-            <img
-              class="profit__inner_img"
-              src="./images/icons/party.png"
-              alt=""
-            />
-            <p>Свадьбы и Дни рождения</p>
-          </div>
-          <div class="profit__inner _anim-items">
-            <img
-              class="profit__inner_img"
-              src="./images/icons/coffee.png"
-              alt=""
-            />
-            <p>Пабы и кафетерии</p>
-          </div>
-          <div class="profit__inner _anim-items">
-            <img
-              class="profit__inner_img"
-              src="./images/icons/corporate.png"
-              alt=""
-            />
-            <p>Семинары</p>
-          </div>
-        </div>
+      <!-- How -->
 
-        <div id="how" class="section">
+      <section id="how">
+        <h3 class="section__title">Как это работает</h3>
+        <div class="section">
           <div class="section__image _anim-items">
             <video controls class="main__video" autoplay loop>
               <source src="./video/description.mp4" type="video/mp4" />
@@ -184,10 +133,9 @@
             </video>
           </div>
           <div class="section__text _anim-items">
-            <h3 class="section__title">Как это работает</h3>
             <div class="section__text_inn">
               <p class="main__desk">
-                <img class="point" src="./images/icons/focus.png" alt="" />
+                <img class="point" src="./images/icons/focus.png" alt="#" />
                 Устанавливаете проектор или любой другой экран в зале где будет
                 проходить мероприятие. Выберете место где он будет работать. Мы
                 рекомендуем либо в центре внимания, например сцена, или chill
@@ -197,14 +145,14 @@
             </div>
             <div class="section__text_inn">
               <p class="main__desk">
-                <img class="point" src="./images/icons/focus.png" alt="" />
+                <img class="point" src="./images/icons/focus.png" alt="#" />
                 Запускаете на подключённом компьютере к экрану браузер и
                 проходите по ссылке, которую вам пришлёт наш специалист
               </p>
             </div>
             <div class="section__text_inn">
               <p class="main__desk">
-                <img class="point" src="./images/icons/focus.png" alt="" />
+                <img class="point" src="./images/icons/focus.png" alt="#" />
                 Отправляете своё собственное первое сообщение. Люди заметив
                 экран, сами вовлекутся и начнут отправлять друг другу послания.
                 Для нагнетания ажиотажа, сообщите в микрофон о ПравдаЧате и
@@ -214,202 +162,334 @@
             <a class="main__btn trigger" href="#">Заказать Чат</a>
           </div>
         </div>
+      </section>
 
-        <div id="feature" class="section">
-          <div class="section__text _anim-items">
-            <h3 class="section__title">Новизна пространства Правда Чат</h3>
-            <p class="main__desk">
-              Анонимность добавляет совершенно новый уровень волнения и
-              вовлеченности в ваши мероприятия! С помощью нашей службы обмена
-              сообщениями гости могут отправлять анонимные сообщения на общий
-              экран. Это создает смелую атмосферу, в которой гости могут
-              свободно делиться своими истинными мыслями и Фактор анонимности
-              снимает любые социальные барьеры и побуждает гостей к более
-              активному участию в мероприятии. Это не только добавляет элемент
-              веселья в мероприятие, но и позволяет получить более открытый и
-              честный отзыв <br /><br />
-              Гости могут с большей вероятностью поделиться своими мыслями о
-              мероприятии или высказать свое мнение по определенным темам, если
-              они чувствуют, что их личность защищена
-            </p>
-            <a class="main__btn trigger" href="#">Заказать Чат</a>
+      <!-- Where -->
+
+      <section id="where">
+        <h2 class="section__title_middle _anim-items">
+          Куда отлично впишится ПравдаЧат:
+        </h2>
+        <div class="profit _anim-items">
+          <div class="profit__inner _anim-items">
+            <img
+              class="profit__inner_img"
+              src="./images/icons/mask.png"
+              alt="#"
+            />
+            <p>Приватные вечеринки</p>
           </div>
-          <div class="section__image _anim-items">
-            <img class="section__img" src="images/h-pic-1.jpg" alt="Gallery" />
+          <div class="profit__inner _anim-items">
+            <img
+              class="profit__inner_img"
+              src="./images/icons/team.png"
+              alt="#"
+            />
+            <p>Корпоративы</p>
+          </div>
+          <div class="profit__inner _anim-items">
+            <img
+              class="profit__inner_img"
+              src="./images/icons/music.png"
+              alt="#"
+            />
+            <p>Музыкальные вечера</p>
+          </div>
+          <div class="profit__inner _anim-items">
+            <img
+              class="profit__inner_img"
+              src="./images/icons/party.png"
+              alt="#"
+            />
+            <p>Свадьбы и Дни рождения</p>
+          </div>
+          <div class="profit__inner _anim-items">
+            <img
+              class="profit__inner_img"
+              src="./images/icons/coffee.png"
+              alt="#"
+            />
+            <p>Пабы и кафетерии</p>
+          </div>
+          <div class="profit__inner _anim-items">
+            <img
+              class="profit__inner_img"
+              src="./images/icons/corporate.png"
+              alt="#"
+            />
+            <p>Семинары</p>
           </div>
         </div>
       </section>
 
-      <!-- Разметка слайдера -->
-      <h2 id="rev" class="section__title_middle _active">Правда Отзывы</h2>
-      <div class="itcss">
-        <div class="itcss__wrapper">
-          <div class="itcss__items">
-            <div class="itcss__item">
-              <div class="section">
-                <div class="iframe-review">
-                  <iframe
-                    src="//player.vimeo.com/video/801858234?h=990693298d&title=0&byline=0&portrait=0"
-                    width="640"
-                    height="1138"
-                    frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="section__text_slider">
-                  <h3 class="section__title">
-                    Алексей Тернов директор по развитию "FlyZone"
-                  </h3>
-                  <div class="section__title_icons">
-                    <div>
-                      <img
-                        class="point_rev"
-                        src="./images/logo/logo-white.png"
-                        alt=""
-                      />
-                      <img
-                        class="point_rev"
-                        src="./images/icons/like.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
+      <!-- exampel -->
 
-                  <p class="main__desk">
-                    &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
-                    вообще никто не будет этим пользоваться, но как оказалось
-                    очень востребованная штука на мероприятии. Прикольно потом
-                    посмотреть на всю переписку. Рекомендую всем пользоваться
-                    ПрадаЧатом для создания крутой интерактивной зоны на вашем
-                    мероприятии."
-                  </p>
-
-                  <a class="main__btn trigger" href="#">Заказать Чат</a>
-                </div>
-              </div>
-            </div>
-            <div class="itcss__item">
-              <div class="section">
-                <div class="iframe-review">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/8TpWBmc3KZQ"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="section__text_slider">
-                  <h3 class="section__title">
-                    Алексей Тернов директор по развитию "FlyZone"
-                  </h3>
-                  <div class="section__title_icons">
-                    <div>
-                      <img
-                        class="point_rev"
-                        src="./images/logo/logo-white.png"
-                        alt=""
-                      />
-                      <img
-                        class="point_rev"
-                        src="./images/icons/like.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <p class="main__desk">
-                    &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
-                    вообще никто не будет этим пользоваться, но как оказалось
-                    очень востребованная штука на мероприятии. Прикольно потом
-                    посмотреть на всю переписку. Рекомендую всем пользоваться
-                    ПрадаЧатом для создания крутой интерактивной зоны на вашем
-                    мероприятии."
-                  </p>
-
-                  <a class="main__btn trigger" href="#">Заказать Чат</a>
-                </div>
-              </div>
-            </div>
-            <div class="itcss__item">
-              <div class="section">
-                <div class="iframe-review">
-                  <iframe
-                    src="//player.vimeo.com/video/801858234?h=990693298d&title=0&byline=0&portrait=0"
-                    width="640"
-                    height="1138"
-                    frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="section__text_slider">
-                  <h3 class="section__title">
-                    Алексей Тернов директор по развитию "FlyZone"
-                  </h3>
-                  <div class="section__title_icons">
-                    <div>
-                      <img
-                        class="point_rev"
-                        src="./images/logo/logo-white.png"
-                        alt=""
-                      />
-                      <img
-                        class="point_rev"
-                        src="./images/icons/like.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-
-                  <p class="main__desk">
-                    &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
-                    вообще никто не будет этим пользоваться, но как оказалось
-                    очень востребованная штука на мероприятии. Прикольно потом
-                    посмотреть на всю переписку. Рекомендую всем пользоваться
-                    ПрадаЧатом для создания крутой интерактивной зоны на вашем
-                    мероприятии."
-                  </p>
-
-                  <a class="main__btn trigger" href="#">Заказать Чат</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="itcss__btn itcss__btn_prev"
-          role="button"
-          data-slide="prev"
-        ></button>
-        <button
-          class="itcss__btn itcss__btn_next"
-          role="button"
-          data-slide="next"
-        ></button>
-      </div>
-
-      <section id="presentation">
-        <h3 class="section__title">Правда Чат</h3>
+      <section id="example">
+        <h3 class="section__title">Так может выглядеть проекция</h3>
         <iframe
           class="iframe"
-          src="https://www.true-msg.online/msg"
+          src="https://www.true-msg.online/landing"
           frameborder="0"
         ></iframe>
       </section>
-      <div>
-        <a
-          href="https://www.flaticon.com/free-icons/congratulation"
-          title="congratulation icons"
-          >Congratulation icons created by Ayub Irawan - Flaticon</a
-        >
-      </div>
+
+      <!-- Rev -->
+      <section id="rev">
+        <h2 class="section__title_middle _active">Правда Отзывы</h2>
+        <div class="itcss">
+          <div class="itcss__wrapper">
+            <div class="itcss__items">
+              <div class="itcss__item">
+                <div class="section">
+                  <div class="iframe-review">
+                    <iframe
+                      src="//player.vimeo.com/video/801858234?h=990693298d&title=0&byline=0&portrait=0"
+                      width="640"
+                      height="1138"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="section__text_slider">
+                    <h3 class="section__title">
+                      Алексей Тернов директор по развитию "FlyZone"
+                    </h3>
+                    <div class="section__title_icons">
+                      <div>
+                        <img
+                          class="point_rev"
+                          src="./images/logo/logo-white.png"
+                          alt="#"
+                        />
+                        <img
+                          class="point_rev"
+                          src="./images/icons/like.png"
+                          alt="#"
+                        />
+                      </div>
+                    </div>
+
+                    <p class="main__desk">
+                      &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
+                      вообще никто не будет этим пользоваться, но как оказалось
+                      очень востребованная штука на мероприятии. Прикольно потом
+                      посмотреть на всю переписку. Рекомендую всем пользоваться
+                      ПрадаЧатом для создания крутой интерактивной зоны на вашем
+                      мероприятии."
+                    </p>
+
+                    <a class="main__btn trigger" href="#">Заказать Чат</a>
+                  </div>
+                </div>
+              </div>
+              <div class="itcss__item">
+                <div class="section">
+                  <div class="iframe-review">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/8TpWBmc3KZQ"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="section__text_slider">
+                    <h3 class="section__title">
+                      Алексей Тернов директор по развитию "FlyZone"
+                    </h3>
+                    <div class="section__title_icons">
+                      <div>
+                        <img
+                          class="point_rev"
+                          src="./images/logo/logo-white.png"
+                          alt="#"
+                        />
+                        <img
+                          class="point_rev"
+                          src="./images/icons/like.png"
+                          alt="#"
+                        />
+                      </div>
+                    </div>
+
+                    <p class="main__desk">
+                      &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
+                      вообще никто не будет этим пользоваться, но как оказалось
+                      очень востребованная штука на мероприятии. Прикольно потом
+                      посмотреть на всю переписку. Рекомендую всем пользоваться
+                      ПрадаЧатом для создания крутой интерактивной зоны на вашем
+                      мероприятии."
+                    </p>
+
+                    <a class="main__btn trigger" href="#">Заказать Чат</a>
+                  </div>
+                </div>
+              </div>
+              <div class="itcss__item">
+                <div class="section">
+                  <div class="iframe-review">
+                    <iframe
+                      src="//player.vimeo.com/video/801858234?h=990693298d&title=0&byline=0&portrait=0"
+                      width="640"
+                      height="1138"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div class="section__text_slider">
+                    <h3 class="section__title">
+                      Алексей Тернов директор по развитию "FlyZone"
+                    </h3>
+                    <div class="section__title_icons">
+                      <div>
+                        <img
+                          class="point_rev"
+                          src="./images/logo/logo-white.png"
+                          alt="#"
+                        />
+                        <img
+                          class="point_rev"
+                          src="./images/icons/like.png"
+                          alt="#"
+                        />
+                      </div>
+                    </div>
+
+                    <p class="main__desk">
+                      &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
+                      вообще никто не будет этим пользоваться, но как оказалось
+                      очень востребованная штука на мероприятии. Прикольно потом
+                      посмотреть на всю переписку. Рекомендую всем пользоваться
+                      ПрадаЧатом для создания крутой интерактивной зоны на вашем
+                      мероприятии."
+                    </p>
+
+                    <a class="main__btn trigger" href="#">Заказать Чат</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="itcss__btn itcss__btn_prev"
+            role="button"
+            data-slide="prev"
+          ></button>
+          <button
+            class="itcss__btn itcss__btn_next"
+            role="button"
+            data-slide="next"
+          ></button>
+        </div>
+      </section>
+
+      <!-- Prise -->
+
+      <section>
+        <h3 class="section__title_middle _active">
+          Закажи чат на своё мероприятие
+        </h3>
+        <div class="prise__desc">
+          Стоимость услуги:&nbsp;&nbsp; <s> <i>3500</i> </s> &nbsp;&nbsp;<span
+            >2900₽</span
+          >
+        </div>
+        <div id="prise" class="section">
+          <div class="section__text _anim-items">
+            <div class="section__text_inn">
+              <h3>Свяжись с нами и узнай о других возможностях ПравдаЧата</h3>
+            </div>
+            <div class="section__text_inn">
+              <p class="main__desk">
+                <img class="point" src="./images/icons/focus.png" alt="#" />
+                Уникальный дизайн под ваше мероприятие
+              </p>
+            </div>
+            <div class="section__text_inn">
+              <p class="main__desk">
+                <img class="point" src="./images/icons/focus.png" alt="#" />
+                Аренда проектора со специалистом на вашу локацию
+              </p>
+            </div>
+            <div class="section__text_inn">
+              <p class="main__desk">
+                <img class="point" src="./images/icons/focus.png" alt="#" />
+                Получите архив всех сообщений
+              </p>
+            </div>
+            <div class="section__text_inn">
+              <p class="main__desk">
+                <img class="point" src="./images/icons/focus.png" alt="#" />
+                Минутный ролик для соцсетей, с самыми забавными сообщениями
+              </p>
+            </div>
+          </div>
+          <div class="section__image _anim-items">
+            <div class="prise__form">
+              <div class="modalWindow">
+                <div class="form">
+                  <form action="#" method="post">
+                    <label for="name"
+                      ><div class="modal__desk">Имя:</div></label
+                    >
+
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      minlength="2"
+                      maxlength="12"
+                      size="10"
+                    />
+                    <br /><br />
+                    <label for="phone"
+                      ><div class="modal__desk">Телефон:</div></label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      required
+                    />
+                    <input id="submit" class="modal__btn" type="submit" />
+                  </form>
+                </div>
+                <div style="text-align: center" class="modal__desk">
+                  или напишите нам в
+                  <div class="prise__logo-telegram">
+                    <a href="https://t.me/seepeople">
+                      <p>Telegram</p>
+                      <img src="./images/telegram-logo.png" alt="#"
+                    /></a>
+                  </div>
+                </div>
+                <a class="logo__telegram" href="https://t.me/seepeople"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Button Up low scroling -->
       <div class="btn-up__wrapper"><div class="btn-up btn-up_hide"></div></div>
       <!--  -->
     </div>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <img class="footer__logo" src="./images/logo/logo-white.png" alt="#" />
+      <div class="footer__contacts">
+        <p>Контактная информация:</p>
+        <span> <a href="tel:+7 918 682 6930">+7 918 682 6930</a> </span> /
+        <a href="https://t.me/seepeople">telegram @seepeople</a>
+      </div>
+    </footer>
   </body>
 </html>

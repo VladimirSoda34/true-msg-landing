@@ -3,6 +3,7 @@ input {
   border: none;
   border-radius: 4px;
   padding: 5px 10px;
+  width: 100%;
 }
 
 /* фон нашего модального окна */
@@ -20,8 +21,8 @@ input {
 /* позиционирование самого модального окна */
 .modalActive {
   position: absolute;
-  width: calc(290px + 60 * ((100vw - 265px) / (1200 - 265)));
-  height: calc(450px + 135 * ((100vw - 265px) / (1200 - 265)));
+  width: calc(290px + 85 * ((100vw - 265px) / (1200 - 265)));
+  height: calc(450px + 200 * ((100vw - 265px) / (1200 - 265)));
   top: calc(50% - 250px);
   left: calc(50% - 175px);
   border-radius: 10px;
@@ -115,7 +116,7 @@ input {
 
 .modal__btn:hover {
   background: rgb(117, 83, 175);
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .logo__telegram {
@@ -125,4 +126,10 @@ input {
 .logo__telegram img {
   margin: 0 auto;
   height: 50px;
+}
+
+.logo__telegram img:hover {
+  scale: 1.2;
+  transition: scale 0.3s ease;
+
 }

@@ -1,8 +1,8 @@
 @media (max-width: 1100px) {
-  #presentation {
+  #example {
     display: none;
   }
-  a[href="#presentation"] {
+  a[href="#example"] {
     display: none;
   }
 }
@@ -15,7 +15,7 @@
     display: none;
   }
   .section__image {
-    padding: 52px 38px 0 38px;
+    padding: 0 38px;
   }
   .section__title {
     text-align: center;
@@ -24,8 +24,6 @@
   .section__text {
     margin: 0 auto;
     padding: 0;
-    min-width: 90vw;
-    /* flex-basis: 99%; */
   }
   
 }
@@ -40,17 +38,20 @@
   .section__text_slider {
     margin: auto 10px;
   }
+  .main__desk {
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 405px) {
-  .header__item_gradient {
+  ul .main__btn  {
     padding: 5px 10px;
   }
   .title__br {
     display: none;
   }
-  .header__list{
+  /* .header__list{
     gap: 12px;
-  }
+  } */
   .header__list span {
     display: none;
   }
@@ -69,11 +70,27 @@
     flex-direction: column;
     margin: auto;
   }
+
+  .section__text {
+    margin-bottom: 30px;
+  }
+
+  .section__text_slider {
+    margin: 15px 17px;
+}
+
+  .main__btn {
+    padding: 5px 10px;
+  }
   .iframe-review iframe {
     margin-left: 0;
   }
   #rev, #feature {
     margin-top: 40px;
+  }
+
+  .itcss {
+    margin-bottom: 30px;
   }
   
 }
