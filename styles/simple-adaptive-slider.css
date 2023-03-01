@@ -16,7 +16,7 @@
 .itcss__wrapper {
   position: relative;
   overflow: hidden;
-  /* background-color: #eee; */
+  
 }
 
 /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
@@ -36,6 +36,8 @@
   transform-style: preserve-3d;
   backface-visibility: hidden;
   will-change: transform;
+  background-color: #0000002e;
+  border-radius: 10px;
 }
 
 /* кнопки Prev и Next */

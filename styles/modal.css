@@ -70,7 +70,7 @@ input {
   height: 16px;
 }
 
-/* делаем позиционирование внутренних элементов относительно модального окна */
+/*  позиционирование внутренних элементов относительно модального окна */
 .modalWindow {
   display: flex;
   flex-direction: column;
@@ -84,6 +84,7 @@ input {
   margin: auto 0;
   top: 7.5px;
   margin: 0 auto 30px;
+  cursor: pointer;
 }
 
 .modal__title {

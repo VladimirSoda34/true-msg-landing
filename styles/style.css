@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;1000&display=swap");
 
 :root {
   --title-font: calc(20px + 13 * ((100vw - 375px) / (1200 - 375)));
@@ -99,7 +99,7 @@ ul .main__btn {
   max-width: 1197px;
   margin: 0 auto;
   padding: 0 15px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 /*  */
@@ -208,10 +208,10 @@ video {
 
 .section__title_middle {
   font-size: var(--title-font);
-  font-weight: 700;
+  font-weight: 1000;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: calc(10px + 60 * ((100vw - 250px) / (1200 - 250)));
+  margin: calc(10px + 60 * ((100vw - 250px) / (1200 - 250))) auto;
   position: relative;
   
 
@@ -248,6 +248,12 @@ video {
   /* padding: 0 15px; */
 }
 
+.prise__title_low {
+  font-size: calc(13px + 10 * ((100vw - 350px) / (1200 - 350)));;
+  text-align: center;
+  font-weight: 600;
+}
+
 .section__text {
   flex-basis: 60%;
   padding: 0 40px;
@@ -268,11 +274,19 @@ video {
 
 .section__title {
   font-size: var(--title-font);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   margin-bottom: 15px;
   text-align: center;
   
+}
+
+#how h3 {
+  font-weight: 1000;
+}
+
+#example h3 {
+  font-weight: 1000;
 }
 
 .section__image {
@@ -373,7 +387,7 @@ video {
 
 .iframe {
   width: 100%;
-  height: 700px;
+  height: 800px;
   transform: scale(0.8);
   border-radius: 20px;
 }
@@ -432,7 +446,7 @@ video {
 
 .prise__desc {
   font-size: var(--title-font);
-  font-weight: 1000;
+  font-weight: 700;
   line-height: 1.2;
 text-align: center;
 margin-bottom: 15px;
@@ -444,7 +458,7 @@ margin-bottom: 15px;
   color: #635574;
 }
 .prise__desc span {
-  color: red;
+  color: #BF3030 ;
 text-shadow: none;
 
 }

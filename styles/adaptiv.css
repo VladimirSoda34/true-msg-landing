@@ -11,16 +11,24 @@
   #how {
     flex-direction: column-reverse;
   }
+  #how .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__video {
+    margin: 0 auto;
+    right: 0;
+    max-width: 300px;
+  }
   #feature .section__image {
     display: none;
   }
   .section__image {
-    padding: 0 38px;
+    padding: 0px 20px;
+    margin: 18px auto 20px;
+
   }
-  .section__title {
-    text-align: center;
-    margin-bottom: 0;
-  }
+  
   .section__text {
     margin: 0 auto;
     padding: 0;
@@ -29,9 +37,7 @@
 }
 
 @media (max-width: 450px) {
-  .section__title {
-    margin-bottom: 0;
-  }
+  
   .point_rev {
     margin: 6px auto;
   }
@@ -39,7 +45,7 @@
     margin: auto 10px;
   }
   .main__desk {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 405px) {
@@ -65,11 +71,7 @@
   }
 }
 @media (max-width: 330px) {
-  .section {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
+  
 
   .section__text {
     margin-bottom: 30px;

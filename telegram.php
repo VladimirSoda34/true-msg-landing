@@ -13,6 +13,8 @@ $arr = array(
   'Телефон: ' => $phone,
 );
 
+$txt = "";
+
 foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };

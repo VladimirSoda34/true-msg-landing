@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/simple-adaptive-slider.css" />
     <link rel="stylesheet" href="./styles/modal.css" />
 
+    <script src="./js/scripts.js" defer></script>
     <script src="./js/scroll.js" defer></script>
     <script src="./js/simple-adaptive-slider.js" defer></script>
 
@@ -27,7 +28,7 @@
           <img src="/images/close.svg" width="12" alt="#" />
         </div>
         <div class="modalWindow">
-          <img class="modal__logo" src="./images/logo/logo-white.png" alt="#" />
+          <img id="modal__logo" class="modal__logo" src="./images/logo/logo-white.png" alt="#" />
           <div class="modal__title">Связь с нами</div>
           <div class="modal__desk">
             Оставьте контакты,<br />
@@ -74,7 +75,7 @@
       <a href="#" class="header__logo"></a>
       <nav class="header__nav">
         <ul class="header__list">
-          <li class="header__item">
+          <li class="header__link">
             <a href="#how" class="header__link">Как <span>работает</span> </a>
           </li>
           <li class="header__item">
@@ -91,7 +92,7 @@
           <li class="header__item">
             <a href="#prise" class="header__link">Цена</a>
           </li>
-          <a href="#" class="main__btn trigger">Заказать Чат</a>
+          <a href="#" class="main__btn trigger">Написать нам</a>
         </ul>
       </nav>
     </header>
@@ -101,13 +102,10 @@
         <div class="main hosting">
           <div class="main__text">
             <h1 class="main__title">
-              Увликательный офлайн чат на ваше мероприятие
+              Увлекательный офлайн чат на ваше мероприятие
             </h1>
             <p class="main__desk">
-              Анонимными сообщениями, люди дадут вам понять своё настроение, и
-              дадут оценку происходящему. Вы как организатор с помощью чата
-              сможете улавливать настроение толпы и корректировать ход
-              мероприятия
+              Запустите наш сайт на проекторе, и все люди вокруг смогут отправлять на него свои сообщения, вовсе увиденья.  Этот весёлый процесс для гостей и возможность для вас узнать их мысли и желания
             </p>
             <a class="main__btn trigger" href="#">Заказать Чат</a>
           </div>
@@ -136,30 +134,22 @@
             <div class="section__text_inn">
               <p class="main__desk">
                 <img class="point" src="./images/icons/focus.png" alt="#" />
-                Устанавливаете проектор или любой другой экран в зале где будет
-                проходить мероприятие. Выберете место где он будет работать. Мы
-                рекомендуем либо в центре внимания, например сцена, или chill
-                зона, место где люди будут отдыхать проводить время тет-а-тет
-                например бар
+                Устанавливаете проектор или любой другой экран в зале, где будет проходить мероприятие. Выберете место, где он будет работать. Мы рекомендуем выбрать место в центре внимания  ( сцена или chil зона) или то, где люди будут отдыхать
               </p>
             </div>
             <div class="section__text_inn">
               <p class="main__desk">
                 <img class="point" src="./images/icons/focus.png" alt="#" />
-                Запускаете на подключённом компьютере к экрану браузер и
-                проходите по ссылке, которую вам пришлёт наш специалист
+                Запускаете браузер на компьютере, подключенном к экрану, и проходите по ссылке, которую вам пришлёт наш специалист
               </p>
             </div>
             <div class="section__text_inn">
               <p class="main__desk">
                 <img class="point" src="./images/icons/focus.png" alt="#" />
-                Отправляете своё собственное первое сообщение. Люди заметив
-                экран, сами вовлекутся и начнут отправлять друг другу послания.
-                Для нагнетания ажиотажа, сообщите в микрофон о ПравдаЧате и
-                первое время сами активно посылайте новые сообщения.
+                Отправляете своё первое сообщение. Люди, заметив экран, сами вовлекутся и начнут отправлять друг другу послания. Для нагнетания ажиотажа сообщите в микрофон о ПравдаЧате и сами активно посылайте новые сообщения первое время
               </p>
             </div>
-            <a class="main__btn trigger" href="#">Заказать Чат</a>
+            
           </div>
         </div>
       </section>
@@ -168,7 +158,7 @@
 
       <section id="where">
         <h2 class="section__title_middle _anim-items">
-          Куда отлично впишится ПравдаЧат:
+          Куда отлично впишется ПравдаЧат:
         </h2>
         <div class="profit _anim-items">
           <div class="profit__inner _anim-items">
@@ -240,6 +230,9 @@
           <div class="itcss__wrapper">
             <div class="itcss__items">
               <div class="itcss__item">
+                <h3 class="section__title">
+                  Алексей Терновой директор по развитию "FlyZone"
+                </h3>
                 <div class="section">
                   <div class="iframe-review">
                     <iframe
@@ -252,9 +245,7 @@
                     ></iframe>
                   </div>
                   <div class="section__text_slider">
-                    <h3 class="section__title">
-                      Алексей Тернов директор по развитию "FlyZone"
-                    </h3>
+                    
                     <div class="section__title_icons">
                       <div>
                         <img
@@ -275,7 +266,7 @@
                       вообще никто не будет этим пользоваться, но как оказалось
                       очень востребованная штука на мероприятии. Прикольно потом
                       посмотреть на всю переписку. Рекомендую всем пользоваться
-                      ПрадаЧатом для создания крутой интерактивной зоны на вашем
+                      Правда Чатом для создания крутой интерактивной зоны на вашем
                       мероприятии."
                     </p>
 
@@ -284,6 +275,9 @@
                 </div>
               </div>
               <div class="itcss__item">
+                <h3 class="section__title">
+                      Алексей Терновой директор по развитию "FlyZone"
+                    </h3>
                 <div class="section">
                   <div class="iframe-review">
                     <iframe
@@ -297,9 +291,7 @@
                     ></iframe>
                   </div>
                   <div class="section__text_slider">
-                    <h3 class="section__title">
-                      Алексей Тернов директор по развитию "FlyZone"
-                    </h3>
+                    
                     <div class="section__title_icons">
                       <div>
                         <img
@@ -320,7 +312,7 @@
                       вообще никто не будет этим пользоваться, но как оказалось
                       очень востребованная штука на мероприятии. Прикольно потом
                       посмотреть на всю переписку. Рекомендую всем пользоваться
-                      ПрадаЧатом для создания крутой интерактивной зоны на вашем
+                      Правда Чатом для создания крутой интерактивной зоны на вашем
                       мероприятии."
                     </p>
 
@@ -329,6 +321,9 @@
                 </div>
               </div>
               <div class="itcss__item">
+                <h3 class="section__title">
+                  Алексей Терновой директор по развитию "FlyZone"
+                </h3>
                 <div class="section">
                   <div class="iframe-review">
                     <iframe
@@ -341,9 +336,7 @@
                     ></iframe>
                   </div>
                   <div class="section__text_slider">
-                    <h3 class="section__title">
-                      Алексей Тернов директор по развитию "FlyZone"
-                    </h3>
+                    
                     <div class="section__title_icons">
                       <div>
                         <img
@@ -394,14 +387,14 @@
           Закажи чат на своё мероприятие
         </h3>
         <div class="prise__desc">
-          Стоимость услуги:&nbsp;&nbsp; <s> <i>3500</i> </s> &nbsp;&nbsp;<span
+          Стоимость услуги:&nbsp;&nbsp; <s> <i>3500</i>  </s> &nbsp;от&nbsp;<span
             >2900₽</span
           >
         </div>
         <div id="prise" class="section">
           <div class="section__text _anim-items">
-            <div class="section__text_inn">
-              <h3>Свяжись с нами и узнай о других возможностях ПравдаЧата</h3>
+            <div class="prise__title_low">
+              <p>Свяжись с нами и узнай о других возможностях ПравдаЧата</p>
             </div>
             <div class="section__text_inn">
               <p class="main__desk">
@@ -432,7 +425,7 @@
             <div class="prise__form">
               <div class="modalWindow">
                 <div class="form">
-                  <form action="#" method="post">
+                  <form action="./telegram.php" method="post">
                     <label for="name"
                       ><div class="modal__desk">Имя:</div></label
                     >
@@ -454,7 +447,7 @@
                       type="tel"
                       id="phone"
                       name="phone"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      
                       required
                     />
                     <input id="submit" class="modal__btn" type="submit" />
