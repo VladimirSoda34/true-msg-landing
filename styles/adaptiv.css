@@ -2,7 +2,7 @@
   #example {
     display: none;
   }
-  a[href="#example"] {
+  #hidde {
     display: none;
   }
 }

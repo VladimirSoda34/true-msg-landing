@@ -1,8 +1,8 @@
 /build
 
-.telegram.php
-telegram.php
-.php
+
+*.php
+*.zip
 
 
 

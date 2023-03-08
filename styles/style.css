@@ -34,7 +34,7 @@ a {
 
 li {
   opacity: 0.5;
-  padding-left: calc(5px + 11 * ((100vw - 375px) / (1200 - 375)));
+  padding-left: calc(10px + 58 * ((100vw - 340px) / (1200 - 340)));
 }
 
 li:hover {
@@ -73,7 +73,7 @@ body {
   display: block;
   width: var(--logo-size);
   height: var(--logo-size);
-  background-image: url(../images/logo/logo-black.png);
+  background-image: url(../images/logo/logo-white.png);
   background-repeat: no-repeat;
   background-size: var(--logo-size);
   position: relative;
@@ -82,7 +82,6 @@ body {
 .header__list {
   display: flex;
   list-style-type: none;
-  padding-left: calc(5px + 20 * ((100vw - 375px) / (1200 - 375)));
   align-items: center;
 }
 
@@ -92,7 +91,7 @@ body {
 }
 
 ul .main__btn {
-  margin-left: 10px;
+  margin-left: calc(27px + 116 * ((100vw - 340px) / (1200 - 340)));
 }
 
 .conteiner {
@@ -356,11 +355,7 @@ video {
   width: 250px;
 }
 
-.section__title_icons {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-}
+
 
 /*  */
 
@@ -376,14 +371,7 @@ video {
   margin: auto 0;
   top: 7.5px;
 }
-.point_rev {
-  position: relative;
-  width: calc(25px + 70 * ((100vw - 240px) / (1200 - 240)));
-  height: calc(25px + 70 * ((100vw - 240px) / (1200 - 240)));
-  margin: auto 0;
-  top: 7.5px;
-  margin: 15px auto;
-}
+
 
 .iframe {
   width: 100%;
@@ -443,6 +431,13 @@ video {
   border-radius: 20px;
   margin-left: 45px;
 }
+.iframe-review img {
+  width: calc(113px + 187 * ((100vw - 405px) / (1200 - 405)));
+  height: calc(195px + 345 * ((100vw - 405px) / (1200 - 405)));
+
+  border-radius: 20px;
+  margin-left: 45px;
+}
 
 .prise__desc {
   font-size: var(--title-font);
@@ -487,6 +482,7 @@ text-shadow: none;
 
 .footer {
   display: flex;
+  font-size: calc(6px + 10 * ((100vw - 375px) / (1200 - 375)));
   align-items: center;
   background: #00000028;
   text-align: center;
@@ -502,4 +498,18 @@ text-shadow: none;
     margin: auto 0;
     top: 7.5px;
     margin: 15px;
+}
+
+.footer-polic {
+  max-width: 400px;
+  padding-right: 15px;
+
+}
+
+.footer-polic a{
+  text-decoration:underline;
+}
+
+.footer__contacts {
+  padding-right: 15px;
 }

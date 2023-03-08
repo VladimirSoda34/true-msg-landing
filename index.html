@@ -21,6 +21,24 @@
     <script src="./js/modal.js" defer></script>
   </head>
   <body>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(92723455, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/92723455" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
     <!-- Modal -->
     <div class="modalBackground">
       <div class="modalActive">
@@ -83,7 +101,7 @@
               >Где <span><span>применимо</span> </span>
             </a>
           </li>
-          <li class="header__item">
+          <li id="hidde" class="header__item">
             <a href="#example" class="header__link">Пример</a>
           </li>
           <li class="header__item">
@@ -105,7 +123,7 @@
               Увлекательный офлайн чат на ваше мероприятие
             </h1>
             <p class="main__desk">
-              Запустите наш сайт на проекторе, и все люди вокруг смогут отправлять на него свои сообщения, вовсе увиденья.  Этот весёлый процесс для гостей и возможность для вас узнать их мысли и желания
+              Запустите демонстрацию Правда Чата на проекторе, чтобы каждый из присутствующих смог отправлять на него сообщения. Этот весёлый процесс для всех гостей станет возможностью поделиться своими мыслями и желаниями
             </p>
             <a class="main__btn trigger" href="#">Заказать Чат</a>
           </div>
@@ -134,19 +152,19 @@
             <div class="section__text_inn">
               <p class="main__desk">
                 <img class="point" src="./images/icons/focus.png" alt="#" />
-                Устанавливаете проектор или любой другой экран в зале, где будет проходить мероприятие. Выберете место, где он будет работать. Мы рекомендуем выбрать место в центре внимания  ( сцена или chil зона) или то, где люди будут отдыхать
+                В зале, где будет проходить мероприятие, необходимо установить проектор или другой экран. Мы рекомендуем выбрать подходящее место таким образом, чтобы он был в центре всеобщего внимания, либо в чилаут-зоне
               </p>
             </div>
             <div class="section__text_inn">
               <p class="main__desk">
                 <img class="point" src="./images/icons/focus.png" alt="#" />
-                Запускаете браузер на компьютере, подключенном к экрану, и проходите по ссылке, которую вам пришлёт наш специалист
+                Запустите браузер на компьютере, подключенном к экрану, и пройдите по ссылке, которую Вам пришлёт наш специалист
               </p>
             </div>
             <div class="section__text_inn">
               <p class="main__desk">
                 <img class="point" src="./images/icons/focus.png" alt="#" />
-                Отправляете своё первое сообщение. Люди, заметив экран, сами вовлекутся и начнут отправлять друг другу послания. Для нагнетания ажиотажа сообщите в микрофон о ПравдаЧате и сами активно посылайте новые сообщения первое время
+                Теперь можно отправить первое сообщение! Заинтересовавшись происходящим на экране, присутствующие сами втянутся в процесс и начнут отправлять друг другу послания. Для создания ажиотажа сообщите в микрофон о ПравдаЧате и первое время сами активно посылайте сообщения в Чат
               </p>
             </div>
             
@@ -246,20 +264,7 @@
                   </div>
                   <div class="section__text_slider">
                     
-                    <div class="section__title_icons">
-                      <div>
-                        <img
-                          class="point_rev"
-                          src="./images/logo/logo-white.png"
-                          alt="#"
-                        />
-                        <img
-                          class="point_rev"
-                          src="./images/icons/like.png"
-                          alt="#"
-                        />
-                      </div>
-                    </div>
+                    
 
                     <p class="main__desk">
                       &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
@@ -276,44 +281,18 @@
               </div>
               <div class="itcss__item">
                 <h3 class="section__title">
-                      Алексей Терновой директор по развитию "FlyZone"
+                  Анна и Роман, свадьба
                     </h3>
                 <div class="section">
                   <div class="iframe-review">
-                    <iframe
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/8TpWBmc3KZQ"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
+                    <img class="review__img" src="./images/rev-1.webp" alt="">
                   </div>
                   <div class="section__text_slider">
                     
-                    <div class="section__title_icons">
-                      <div>
-                        <img
-                          class="point_rev"
-                          src="./images/logo/logo-white.png"
-                          alt="#"
-                        />
-                        <img
-                          class="point_rev"
-                          src="./images/icons/like.png"
-                          alt="#"
-                        />
-                      </div>
-                    </div>
+                    
 
                     <p class="main__desk">
-                      &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
-                      вообще никто не будет этим пользоваться, но как оказалось
-                      очень востребованная штука на мероприятии. Прикольно потом
-                      посмотреть на всю переписку. Рекомендую всем пользоваться
-                      Правда Чатом для создания крутой интерактивной зоны на вашем
-                      мероприятии."
+                      &nbsp;&nbsp;&nbsp;&nbsp;"На нашей свадьбе было много чего интересного, но Правда Чат многим запомнился больше всего. Особенно то как ведущий использовал этот чат для различных викторин. Спасибо вам ребята!"
                     </p>
 
                     <a class="main__btn trigger" href="#">Заказать Чат</a>
@@ -322,43 +301,18 @@
               </div>
               <div class="itcss__item">
                 <h3 class="section__title">
-                  Алексей Терновой директор по развитию "FlyZone"
+                  Роза Мозес - организатор вечеринки "Среда" 
                 </h3>
                 <div class="section">
                   <div class="iframe-review">
-                    <iframe
-                      src="//player.vimeo.com/video/801858234?h=990693298d&title=0&byline=0&portrait=0"
-                      width="640"
-                      height="1138"
-                      frameborder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
+                    <img src="./images/rev-2.webp" alt="">
                   </div>
                   <div class="section__text_slider">
                     
-                    <div class="section__title_icons">
-                      <div>
-                        <img
-                          class="point_rev"
-                          src="./images/logo/logo-white.png"
-                          alt="#"
-                        />
-                        <img
-                          class="point_rev"
-                          src="./images/icons/like.png"
-                          alt="#"
-                        />
-                      </div>
-                    </div>
+                    
 
                     <p class="main__desk">
-                      &nbsp;&nbsp;&nbsp;&nbsp;"Скажу честно, сначала думала что
-                      вообще никто не будет этим пользоваться, но как оказалось
-                      очень востребованная штука на мероприятии. Прикольно потом
-                      посмотреть на всю переписку. Рекомендую всем пользоваться
-                      ПрадаЧатом для создания крутой интерактивной зоны на вашем
-                      мероприятии."
+                      &nbsp;&nbsp;&nbsp;&nbsp;"Очень круто, мне сразу понравилась идея Правда Чата. Отличный сервис, всё работало как обещали. Поставили проектор в чил зоне где отдыхали гости. Сама там постоянна сидела у экрана читала забавные сообщения наших дорогих гостей, это весело =)"
                     </p>
 
                     <a class="main__btn trigger" href="#">Заказать Чат</a>
@@ -384,7 +338,7 @@
 
       <section>
         <h3 class="section__title_middle _active">
-          Закажи чат на своё мероприятие
+          Закажите чат на Ваше мероприятие
         </h3>
         <div class="prise__desc">
           Стоимость услуги:&nbsp;&nbsp; <s> <i>3500</i>  </s> &nbsp;от&nbsp;<span
@@ -394,18 +348,18 @@
         <div id="prise" class="section">
           <div class="section__text _anim-items">
             <div class="prise__title_low">
-              <p>Свяжись с нами и узнай о других возможностях ПравдаЧата</p>
+              <p>Свяжитесь с нами и узнайте о других возможностях ПравдаЧата</p>
             </div>
             <div class="section__text_inn">
               <p class="main__desk">
                 <img class="point" src="./images/icons/focus.png" alt="#" />
-                Уникальный дизайн под ваше мероприятие
+                Уникальный дизайн, соответствующий тематике Вашего мероприятия
               </p>
             </div>
             <div class="section__text_inn">
               <p class="main__desk">
                 <img class="point" src="./images/icons/focus.png" alt="#" />
-                Аренда проектора со специалистом на вашу локацию
+                Аренда проектора со специалистом на Вашу локацию
               </p>
             </div>
             <div class="section__text_inn">
@@ -417,7 +371,7 @@
             <div class="section__text_inn">
               <p class="main__desk">
                 <img class="point" src="./images/icons/focus.png" alt="#" />
-                Минутный ролик для соцсетей, с самыми забавными сообщениями
+                Минутный ролик для соцсетей с самыми забавными сообщениями
               </p>
             </div>
           </div>
@@ -483,6 +437,8 @@
         <span> <a href="tel:+7 918 682 6930">+7 918 682 6930</a> </span> /
         <a href="https://t.me/seepeople">telegram @seepeople</a>
       </div>
+      <div class="footer-polic">Посещая страницы нашего сайта и заполняя форму обратной связи, Вы соглашаетесь с <a href="https://rosstat.gov.ru/politika-konfidencialnosti">Политикой конфиденциальности</a> и спользование файлов cookie</div>
+      
     </footer>
   </body>
 </html>

@@ -1,6 +1,7 @@
 input {
   outline: none;
   border: none;
+  background-color: gainsboro;
   border-radius: 4px;
   padding: 5px 10px;
   width: 100%;
@@ -104,10 +105,10 @@ input {
 
 .modal__btn {
   font-size: calc(10px + 5 * ((100vw - 375px) / (1200 - 375)));
-  color: #000;
+  color: #fff;
   text-decoration: none;
   border-radius: 10px;
-  background: rgb(234 222 255);
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
   padding: 10px 20px;
   margin-right: 20px;
   margin-top: 15px;
@@ -116,8 +117,8 @@ input {
 }
 
 .modal__btn:hover {
-  background: rgb(117, 83, 175);
-  transition: background 0.3s ease;
+  background: #d9aaff;
+  /* transition: background 0.3s ease; */
 }
 
 .logo__telegram {
